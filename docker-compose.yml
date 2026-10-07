@@ -1,0 +1,8 @@
+services:
+  docx-audit-api:
+    build: .
+    image: docx-crossref-audit:1.0.0
+    container_name: docx-crossref-audit
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
